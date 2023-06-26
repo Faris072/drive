@@ -8,12 +8,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
 
-    protected $guarded = ['id'];
+    protected $guarded = ['id','uuid'];
 
     protected $hidden = [
         'password',
@@ -23,11 +24,15 @@ class User extends Authenticatable
         parent::boot();
 
         static::creating(function($model){
-            $model->id_hash = Str::uuid();
+            $model->uuid = Str::uuid();
         });
     }
 
+    public function role(){
+        return $this->belongsTo(Role::class, 'role_id','id');
+    }
+
     public function folders(){
-        $this->hasMany(Folder::class, 'user_id','id');
+        return $this->hasMany(Folder::class, 'user_id','id');
     }
 }

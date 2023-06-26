@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 
-class Folder extends Model
+class Role extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -22,6 +22,6 @@ class Folder extends Model
     }
 
     public function user(){
-        return $this->belongsTo(User::class,'user_id','id');
+        return $this->hasMany(User::class,'user_id','id');
     }
 }
