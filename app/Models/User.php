@@ -16,15 +16,16 @@ class User extends Authenticatable
 
     protected $guarded = ['id','uuid'];
 
-    protected $hidden = [
-        'password',
-    ];
+    protected $hidden = ['id', 'password'];
 
     protected static function boot(){
         parent::boot();
 
         static::creating(function($model){
             $model->uuid = Str::uuid();
+            $model->is_active = true;
+            $model->storage = 10000;
+            $model->role_id = 3;
         });
     }
 

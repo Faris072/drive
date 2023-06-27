@@ -17,14 +17,14 @@ class RoleSeeder extends Seeder
     public function run()
     {
         $data = [
-            ['id' => 1, 'uuid' => Str::uuid(), 'slug' => 'developer', 'name' => 'Developer'],
-            ['id' => 2, 'uuid' => Str::uuid(), 'slug' => 'admin', 'name' => 'Administrator'],
-            ['id' => 3, 'uuid' => Str::uuid(), 'slug' => 'user', 'name' => 'User'],
+            ['uuid' => Str::uuid(), 'slug' => 'developer', 'name' => 'Developer'],
+            ['uuid' => Str::uuid(), 'slug' => 'admin', 'name' => 'Administrator'],
+            ['uuid' => Str::uuid(), 'slug' => 'user', 'name' => 'User'],
         ];
 
         foreach($data as $d){
             // updateOrInsert() supaya createdAt dan updatedAt nya tidak ganti
-            $condition = ['id' => $d['id'], 'slug' => $d['slug']];
+            $condition = ['slug' => $d['slug']];
             Role::updateOrInsert($condition, $d);
         }
     }

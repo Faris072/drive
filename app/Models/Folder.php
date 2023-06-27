@@ -12,6 +12,7 @@ class Folder extends Model
     use HasFactory, SoftDeletes;
 
     protected $guarded = ['id','uuid'];
+    protected $hidden = ['uuid'];
 
     protected static function boot(){
         parent::boot();

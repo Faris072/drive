@@ -17,14 +17,14 @@ class FolderSeeder extends Seeder
     public function run()
     {
         $data = [
-            ['id' => 1, 'uuid' => Str::uuid(), 'user_id' => 1, 'parent_id' => null, 'name' => 'developer', 'created_by' => 1, 'updated_by' => 1],
-            ['id' => 1, 'uuid' => Str::uuid(), 'user_id' => 2, 'parent_id' => null, 'name' => 'admin', 'created_by' => 2, 'updated_by' => 2],
+            ['uuid' => Str::uuid(), 'user_id' => 1, 'parent_id' => null, 'name' => 'developer', 'created_by' => 1, 'updated_by' => 1],
+            ['uuid' => Str::uuid(), 'user_id' => 2, 'parent_id' => null, 'name' => 'admin', 'created_by' => 2, 'updated_by' => 2],
         ];
 
         foreach($data as $d){
             // updateOrInsert() supaya createdAt dan updatedAt nya tidak ganti
-            $condition = ['id' => $d['id']];
-            Folder::updateOrInsert($condition, $d);
+            // $condition = ['id' => $d['id']];
+            Folder::create($d);
         }
     }
 }
