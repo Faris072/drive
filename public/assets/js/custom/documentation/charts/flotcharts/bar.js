@@ -1,0 +1,33 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/assets/core/js/custom/documentation/charts/flotcharts/bar.js":
+/*!********************************************************************************!*\
+  !*** ./resources/assets/core/js/custom/documentation/charts/flotcharts/bar.js ***!
+  \********************************************************************************/
+/***/ (() => {
+
+eval(" // Class definition\n\nvar KTFlotDemoBar = function () {\n  // Private functions\n  var exampleBar = function exampleBar() {\n    // horizontal bar chart:\n    var data1 = [[10, 10], [20, 20], [30, 30], [40, 40], [50, 50], [60, 60], [70, 70], [80, 80], [90, 90], [100, 100]];\n    var options = {\n      colors: [KTUtil.getCssVariableValue('--kt-active-primary')],\n      series: {\n        bars: {\n          show: true\n        }\n      },\n      bars: {\n        horizontal: true,\n        barWidth: 6,\n        lineWidth: 0,\n        // in pixels\n        shadowSize: 0,\n        align: 'left'\n      },\n      grid: {\n        tickColor: KTUtil.getCssVariableValue('--kt-light-dark'),\n        borderColor: KTUtil.getCssVariableValue('--kt-light-dark'),\n        borderWidth: 1\n      }\n    };\n    $.plot($(\"#kt_docs_flot_bar\"), [data1], options);\n  };\n\n  return {\n    // Public Functions\n    init: function init() {\n      exampleBar();\n    }\n  };\n}(); // On document ready\n\n\nKTUtil.onDOMContentLoaded(function () {\n  KTFlotDemoBar.init();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvYXNzZXRzL2NvcmUvanMvY3VzdG9tL2RvY3VtZW50YXRpb24vY2hhcnRzL2Zsb3RjaGFydHMvYmFyLmpzLmpzIiwibWFwcGluZ3MiOiJDQUVBOztBQUNBLElBQUlBLGFBQWEsR0FBRyxZQUFZO0VBQzVCO0VBQ0EsSUFBSUMsVUFBVSxHQUFHLFNBQWJBLFVBQWEsR0FBWTtJQUN6QjtJQUNOLElBQUlDLEtBQUssR0FBRyxDQUNYLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FEVyxFQUVYLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FGVyxFQUdYLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FIVyxFQUlYLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FKVyxFQUtYLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FMVyxFQU1GLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FORSxFQU9GLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FQRSxFQVFGLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FSRSxFQVNGLENBQUMsRUFBRCxFQUFLLEVBQUwsQ0FURSxFQVVGLENBQUMsR0FBRCxFQUFNLEdBQU4sQ0FWRSxDQUFaO0lBYUEsSUFBSUMsT0FBTyxHQUFHO01BQ2JDLE1BQU0sRUFBRSxDQUFDQyxNQUFNLENBQUNDLG1CQUFQLENBQTJCLHFCQUEzQixDQUFELENBREs7TUFFYkMsTUFBTSxFQUFFO1FBQ1BDLElBQUksRUFBRTtVQUNMQyxJQUFJLEVBQUU7UUFERDtNQURDLENBRks7TUFPYkQsSUFBSSxFQUFFO1FBQ0xFLFVBQVUsRUFBRSxJQURQO1FBRUxDLFFBQVEsRUFBRSxDQUZMO1FBR0xDLFNBQVMsRUFBRSxDQUhOO1FBR1M7UUFDZEMsVUFBVSxFQUFFLENBSlA7UUFLTEMsS0FBSyxFQUFFO01BTEYsQ0FQTztNQWNiQyxJQUFJLEVBQUU7UUFDTEMsU0FBUyxFQUFFWCxNQUFNLENBQUNDLG1CQUFQLENBQTJCLGlCQUEzQixDQUROO1FBRUxXLFdBQVcsRUFBRVosTUFBTSxDQUFDQyxtQkFBUCxDQUEyQixpQkFBM0IsQ0FGUjtRQUdMWSxXQUFXLEVBQUU7TUFIUjtJQWRPLENBQWQ7SUFxQkFDLENBQUMsQ0FBQ0MsSUFBRixDQUFPRCxDQUFDLENBQUMsbUJBQUQsQ0FBUixFQUErQixDQUFDakIsS0FBRCxDQUEvQixFQUF3Q0MsT0FBeEM7RUFDRyxDQXJDRDs7RUF1Q0EsT0FBTztJQUNIO0lBQ0FrQixJQUFJLEVBQUUsZ0JBQVk7TUFDZHBCLFVBQVU7SUFDYjtFQUpFLENBQVA7QUFNSCxDQS9DbUIsRUFBcEIsQyxDQWlEQTs7O0FBQ0FJLE1BQU0sQ0FBQ2lCLGtCQUFQLENBQTBCLFlBQVk7RUFDbEN0QixhQUFhLENBQUNxQixJQUFkO0FBQ0gsQ0FGRCIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9hc3NldHMvY29yZS9qcy9jdXN0b20vZG9jdW1lbnRhdGlvbi9jaGFydHMvZmxvdGNoYXJ0cy9iYXIuanM/ZmRkOCJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcclxuXHJcbi8vIENsYXNzIGRlZmluaXRpb25cclxudmFyIEtURmxvdERlbW9CYXIgPSBmdW5jdGlvbiAoKSB7XHJcbiAgICAvLyBQcml2YXRlIGZ1bmN0aW9uc1xyXG4gICAgdmFyIGV4YW1wbGVCYXIgPSBmdW5jdGlvbiAoKSB7XHJcbiAgICAgICAgLy8gaG9yaXpvbnRhbCBiYXIgY2hhcnQ6XHJcblx0XHR2YXIgZGF0YTEgPSBbXHJcblx0XHRcdFsxMCwgMTBdLFxyXG5cdFx0XHRbMjAsIDIwXSxcclxuXHRcdFx0WzMwLCAzMF0sXHJcblx0XHRcdFs0MCwgNDBdLFxyXG5cdFx0XHRbNTAsIDUwXSxcclxuICAgICAgICAgICAgWzYwLCA2MF0sXHJcbiAgICAgICAgICAgIFs3MCwgNzBdLFxyXG4gICAgICAgICAgICBbODAsIDgwXSxcclxuICAgICAgICAgICAgWzkwLCA5MF0sXHJcbiAgICAgICAgICAgIFsxMDAsIDEwMF0sXHJcblx0XHRdO1xyXG5cclxuXHRcdHZhciBvcHRpb25zID0ge1xyXG5cdFx0XHRjb2xvcnM6IFtLVFV0aWwuZ2V0Q3NzVmFyaWFibGVWYWx1ZSgnLS1rdC1hY3RpdmUtcHJpbWFyeScpXSxcclxuXHRcdFx0c2VyaWVzOiB7XHJcblx0XHRcdFx0YmFyczoge1xyXG5cdFx0XHRcdFx0c2hvdzogdHJ1ZVxyXG5cdFx0XHRcdH1cclxuXHRcdFx0fSxcclxuXHRcdFx0YmFyczoge1xyXG5cdFx0XHRcdGhvcml6b250YWw6IHRydWUsXHJcblx0XHRcdFx0YmFyV2lkdGg6IDYsXHJcblx0XHRcdFx0bGluZVdpZHRoOiAwLCAvLyBpbiBwaXhlbHNcclxuXHRcdFx0XHRzaGFkb3dTaXplOiAwLFxyXG5cdFx0XHRcdGFsaWduOiAnbGVmdCdcclxuXHRcdFx0fSxcclxuXHRcdFx0Z3JpZDoge1xyXG5cdFx0XHRcdHRpY2tDb2xvcjogS1RVdGlsLmdldENzc1ZhcmlhYmxlVmFsdWUoJy0ta3QtbGlnaHQtZGFyaycpLFxyXG5cdFx0XHRcdGJvcmRlckNvbG9yOiBLVFV0aWwuZ2V0Q3NzVmFyaWFibGVWYWx1ZSgnLS1rdC1saWdodC1kYXJrJyksXHJcblx0XHRcdFx0Ym9yZGVyV2lkdGg6IDFcclxuXHRcdFx0fVxyXG5cdFx0fTtcclxuXHJcblx0XHQkLnBsb3QoJChcIiNrdF9kb2NzX2Zsb3RfYmFyXCIpLCBbZGF0YTFdLCBvcHRpb25zKTtcclxuICAgIH1cclxuXHJcbiAgICByZXR1cm4ge1xyXG4gICAgICAgIC8vIFB1YmxpYyBGdW5jdGlvbnNcclxuICAgICAgICBpbml0OiBmdW5jdGlvbiAoKSB7XHJcbiAgICAgICAgICAgIGV4YW1wbGVCYXIoKTtcclxuICAgICAgICB9XHJcbiAgICB9O1xyXG59KCk7XHJcblxyXG4vLyBPbiBkb2N1bWVudCByZWFkeVxyXG5LVFV0aWwub25ET01Db250ZW50TG9hZGVkKGZ1bmN0aW9uICgpIHtcclxuICAgIEtURmxvdERlbW9CYXIuaW5pdCgpO1xyXG59KTtcclxuIl0sIm5hbWVzIjpbIktURmxvdERlbW9CYXIiLCJleGFtcGxlQmFyIiwiZGF0YTEiLCJvcHRpb25zIiwiY29sb3JzIiwiS1RVdGlsIiwiZ2V0Q3NzVmFyaWFibGVWYWx1ZSIsInNlcmllcyIsImJhcnMiLCJzaG93IiwiaG9yaXpvbnRhbCIsImJhcldpZHRoIiwibGluZVdpZHRoIiwic2hhZG93U2l6ZSIsImFsaWduIiwiZ3JpZCIsInRpY2tDb2xvciIsImJvcmRlckNvbG9yIiwiYm9yZGVyV2lkdGgiLCIkIiwicGxvdCIsImluaXQiLCJvbkRPTUNvbnRlbnRMb2FkZWQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/assets/core/js/custom/documentation/charts/flotcharts/bar.js\n");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./resources/assets/core/js/custom/documentation/charts/flotcharts/bar.js"]();
+/******/ 	
+/******/ })()
+;
