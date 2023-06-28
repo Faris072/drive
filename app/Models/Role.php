@@ -12,7 +12,7 @@ class Role extends Model
     use HasFactory, SoftDeletes;
 
     protected $guarded = ['id','uuid'];
-    protected $hidden = ['uuid'];
+    protected $hidden = ['id'];
 
     protected static function boot(){
         parent::boot();

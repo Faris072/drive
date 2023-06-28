@@ -21,4 +21,16 @@ Route::group(['middleware' => ['auth:sanctum']], function(){
     Route::group(['prefix' => 'user'], function(){
         Route::get('me', 'App\Http\Controllers\Api\UserController@me');
     });
+    Route::group(['prefix' => 'folder'], function(){
+        Route::post('create','App\Http\Controllers\Api\DriveController@createFolder');
+        Route::get('show/{id}','App\Http\Controllers\Api\DriveController@showFolder');
+        Route::delete('delete/{id}','App\Http\Controllers\Api\DriveController@deleteFolder');
+    });
+    Route::group(['prefix' => 'file'], function(){
+        Route::post('create', 'App\Http\Controllers\Api\DriveController@createFile');
+        Route::get('render/{id}','App\Http\Controllers\Api\DriveController@renderFile')->name('render-file');
+        Route::get('show/{id}','App\Http\Controllers\Api\DriveController@showFile');
+        Route::delete('delete/{id}','App\Http\Controllers\Api\DriveController@deleteFile');
+    });
+
 });

@@ -12,7 +12,7 @@ class File extends Model
     use HasFactory, SoftDeletes;
 
     protected $guarded = ['id','uuid'];
-    protected $hidden = ['uuid'];
+    protected $hidden = ['id'];
 
     public function user(){
         return $this->belongsTo(User::class,'user_id','id');

@@ -75,7 +75,7 @@ class UserController extends Controller
 
     public function login(Request $request){
         try{
-            $user = User::where('username', $request->username)->orWhere('email',$request->email)->first();
+            $user = User::where('username', $request->username)->orWhere('email',$request->email ?? $request->username)->first();
 
             if(!$user || !Hash::check($request->password, $user->password)){
                 return $this->getResponse('','Username atau Password tidak ditemukan.',401);

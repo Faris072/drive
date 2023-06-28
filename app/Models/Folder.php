@@ -12,7 +12,7 @@ class Folder extends Model
     use HasFactory, SoftDeletes;
 
     protected $guarded = ['id','uuid'];
-    protected $hidden = ['uuid'];
+    protected $hidden = ['id'];
 
     protected static function boot(){
         parent::boot();
@@ -24,5 +24,9 @@ class Folder extends Model
 
     public function user(){
         return $this->belongsTo(User::class,'user_id','id');
+    }
+
+    public function parent(){
+        return $this->belongsTo(Folder::class,'parent_id','id');
     }
 }
