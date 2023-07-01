@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Drive - Muhammad Faris Shafwan",
+        "description": "Ini adalah aplikasi penyimanan file yang bertujuan menyimpan data seperti memori.",
+        "contact": {
+            "email": "farisbos.mfs@gmail.com"
+        },
+        "license": {
+            "name": "Muhammad Faris Shafwan",
+            "url": "https://blogfarisweb.blogspot.com"
+        },
+        "version": "8.5"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000/api",
+            "description": "Api drive"
+        }
+    ],
+    "paths": {
+        "/users/login": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Login",
+                "description": "Login ke aplikasi",
+                "operationId": "users",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {},
+                                "example": {
+                                    "success": true,
+                                    "message": "Berhasil mengambil Kategori Berita",
+                                    "data": [
+                                        {
+                                            "id": "1",
+                                            "nama_kategori": "Pendidikan"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

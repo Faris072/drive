@@ -12,6 +12,31 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+
+    /**
+    *    @OA\POST(
+    *       path="/users/login",
+    *       tags={"User"},
+    *       operationId="users",
+    *       summary="Login",
+    *       description="Login ke aplikasi",
+    *       @OA\Response(
+    *           response="200",
+    *           description="Ok",
+    *           @OA\JsonContent
+    *           (example={
+    *               "success": true,
+    *               "message": "Berhasil mengambil Kategori Berita",
+    *               "data": {
+    *                   {
+    *                   "id": "1",
+    *                   "nama_kategori": "Pendidikan",
+    *                  }
+    *              }
+    *          }),
+    *      ),
+    *  )
+    */
     public function register(Request $request){
         DB::beginTransaction();
         try{
